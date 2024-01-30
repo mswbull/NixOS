@@ -23,19 +23,19 @@ flatpak install flathub com.github.tchx84.Flatseal
 
 services.fprintd.enable = true;
 
-services.flatpak.enable = true;
+services.flatpak.enable = true;  
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 virtualisation.docker.enable = true;
 
-virtualisation.libvirtd.enable = true;
+virtualisation.libvirtd.enable = true;  
 programs.virt-manager.enable = true;
 
-services.onedrive.enable = true;
-onedrive
-systemctl --user enable onedrive@onedrive.service
-systemctl --user start onedrive@onedrive.service
-systemctl --user status onedrive@onedrive.service
+services.onedrive.enable = true;  
+onedrive  
+systemctl --user enable onedrive@onedrive.service  
+systemctl --user start onedrive@onedrive.service  
+systemctl --user status onedrive@onedrive.service  
 journalctl --user -t onedrive | less
 
 ---
@@ -50,13 +50,13 @@ vscode
 ollama  
 bitwarden  
 godot_4  
-steam  
+steam
 
 ---
 
 ### Fonts
 
-fonts.packages = with pkgs; [
+fonts.packages = with pkgs; [  
   corefonts  
   vistafonts  
   noto-fonts  
@@ -72,8 +72,8 @@ fonts.packages = with pkgs; [
 
 fonts.fontDir.enable = true;
 
-ln -s /run/current-system/sw/share/X11/fonts ~/.local/share/fonts
-flatpak --user override --filesystem=$HOME/.local/share/fonts
+ln -s /run/current-system/sw/share/X11/fonts ~/.local/share/fonts  
+flatpak --user override --filesystem=$HOME/.local/share/fonts  
 flatpak --user override --filesystem=$HOME/.icons
 
 ---
