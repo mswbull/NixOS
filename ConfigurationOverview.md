@@ -2,19 +2,19 @@
 
 ./flatpak.sh
 
-flatpak install flathub org.mozilla.firefox
-flatpak install flathub org.libreoffice.LibreOffice
-flatpak install flathub md.obsidian.Obsidian
-flatpak install flathub org.gimp.GIMP
-flatpak install flathub org.kde.krita
-flatpak install flathub org.audacityteam.Audacity
-flatpak install flathub org.videolan.VLC
-flatpak install flathub fr.handbrake.ghb
-flatpak install flathub com.obsproject.Studio
-flatpak install flathub com.getpostman.Postman
-flatpak install flathub com.usebottles.bottles
-flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
-flatpak install flathub com.heroicgameslauncher.hgl
+flatpak install flathub org.mozilla.firefox  
+flatpak install flathub org.libreoffice.LibreOffice  
+flatpak install flathub md.obsidian.Obsidian  
+flatpak install flathub org.gimp.GIMP  
+flatpak install flathub org.kde.krita  
+flatpak install flathub org.audacityteam.Audacity  
+flatpak install flathub org.videolan.VLC  
+flatpak install flathub fr.handbrake.ghb  
+flatpak install flathub com.obsproject.Studio  
+flatpak install flathub com.getpostman.Postman  
+flatpak install flathub com.usebottles.bottles  
+flatpak install flathub com.github.IsmaelMartinez.teams_for_linux 
+flatpak install flathub com.heroicgameslauncher.hgl  
 flatpak install flathub com.github.tchx84.Flatseal
 
 ---
@@ -42,32 +42,32 @@ journalctl --user -t onedrive | less
 
 ### NixOS Packages
 
-neofetch
-wget
-git
-google-chrome
-vscode
-ollama
-bitwarden
-godot_4
-steam
+neofetch  
+wget  
+git  
+google-chrome  
+vscode  
+ollama  
+bitwarden  
+godot_4  
+steam  
 
 ---
 
 ### Fonts
 
 fonts.packages = with pkgs; [
-  corefonts
-  vistafonts
-  noto-fonts
-  noto-fonts-cjk
-  noto-fonts-emoji
-  liberation_ttf
-  fira-code
-  fira-code-symbols
-  mplus-outline-fonts.githubRelease
-  dina-font
-  proggyfonts
+  corefonts  
+  vistafonts  
+  noto-fonts  
+  noto-fonts-cjk  
+  noto-fonts-emoji  
+  liberation_ttf  
+  fira-code  
+  fira-code-symbols  
+  mplus-outline-fonts.githubRelease  
+  dina-font  
+  proggyfonts  
 ];
 
 fonts.fontDir.enable = true;
