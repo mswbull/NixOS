@@ -12,23 +12,23 @@ https://flatpak.org/setup/NixOS
 
 ### Commands
 
-/etc/nixos/configuration.nix
+/etc/nixos/configuration.nix  
 *Define new system configuration
 
-nixos-rebuild switch
+nixos-rebuild switch  
 *Switch to the configuration defined configuration.nix
 
-sudo nixos-rebuild boot --upgrade
+sudo nixos-rebuild boot --upgrade  
 *Upgrade system
 
-nixos-rebuild switch --rollback
+nixos-rebuild switch --rollback  
 *switch to previous configuration
 
-sudo nix-collect-garbage -d
+sudo nix-collect-garbage -d  
 *Retain the current configuration, delete all old ones
 
-sudo nix-collect-garbage -- delete-older-than 30d
+sudo nix-collect-garbage -- delete-older-than 30d  
 *Retain the current configuration, delete older than 30 days
 
-flatpak update -y\
+flatpak update -y\  
 *Update flatpak applications
